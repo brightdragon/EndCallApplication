@@ -21,7 +21,6 @@ class EndCallService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-
         notification()
     }
 
@@ -58,7 +57,6 @@ class EndCallService : Service() {
         builder.setAutoCancel(true)
         startForeground(notificationId, builder.build())
     }
-
 
     private fun endCall(context: Context): Boolean {
         return try {
